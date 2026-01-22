@@ -1,48 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Brett Pauli</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <title>Home | Brett Pauli</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      max-width: 720px;
-      margin: 4rem auto;
+      max-width: 860px;
+      margin: 3.5rem auto;
       padding: 0 1rem;
       line-height: 1.6;
       color: #222;
     }
-    h1 {
-      margin-bottom: 0.2rem;
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
     }
-    nav a {
-      margin-right: 1rem;
-      text-decoration: none;
-      color: #0366d6;
+
+    header h1 {
+      letter-spacing: 0.12em;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 0;
+      text-transform: uppercase;
     }
+
     nav {
+      margin-top: 1.25rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.6rem;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #7a7a7a;
+    }
+
+    nav a.active {
+      color: #111;
+      font-weight: 600;
+    }
+
+    .icons {
+      margin-top: 1.25rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .iconlink {
+      display: inline-flex;
+      width: 34px;
+      height: 34px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      border: 1px solid #ddd;
+      text-decoration: none;
+    }
+
+    .iconlink:hover {
+      border-color: #bbb;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 2.5rem 0 0.75rem;
+      font-size: 1.25rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #e6e6e6;
+      margin: 1rem 0 1.75rem;
+    }
+
+    .lead {
+      text-align: center;
+      color: #555;
+      margin-top: 0.75rem;
       margin-bottom: 2rem;
+    }
+
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 1.02rem;
+    }
+
+    footer {
+      margin-top: 3.5rem;
+      text-align: center;
+      color: #8a8a8a;
+      font-size: 0.85rem;
     }
   </style>
 </head>
+
 <body>
 
-<h1>Brett Pauli</h1>
-<p>Aquatic ecologist · quantitative ecology · data analysis</p>
+<header>
+  <h1>Brett Pauli</h1>
 
-<nav>
-  <a href="resume.html">Resume</a>
-  <a href="publications.html">Publications</a>
-  <a href="projects.html">Projects</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="publications.html">Publications</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<p>
-I’m an aquatic ecologist working at the intersection of field data, statistical modelling, 
-and ecological theory. My work spans freshwater and marine systems, with a focus on 
-food webs, stability, and ecosystem change.
-</p>
+  <div class="icons">
+    <!-- GitHub icon -->
+    <a class="iconlink" href="https://github.com/brettpauli99" target="_blank" aria-label="GitHub">
+      <svg width="18" height="18" viewBox="0 0 16 16" fill="#111" aria-hidden="true">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path>
+      </svg>
+    </a>
+
+    <!-- Google Scholar icon -->
+    <a class="iconlink" href="https://scholar.google.ca/citations?user=GrkV2DUAAAAJ&hl=en" target="_blank" aria-label="Google Scholar">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="#1a73e8" aria-hidden="true">
+        <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm0 10L5.14 9 12 5.27 18.86 9 12 13Zm-6 2.5V14l6 3.27L18 14v1.5L12 19l-6-3.5Z"/>
+      </svg>
+    </a>
+  </div>
+
+  <p class="lead">Aquatic ecologist · quantitative ecology · data analysis</p>
+</header>
+
+<h2>About</h2>
+<hr />
+
+<div class="content">
+  <p>
+    I’m an aquatic ecologist working at the intersection of field data, statistical modelling,
+    and ecological theory. My work spans freshwater and marine systems, with a focus on
+    food webs, stability, and ecosystem change.
+  </p>
+
+  <!-- Optional extra paragraph (delete if you want it lean) -->
+  <p>
+    This site hosts my CV, publications, projects, and selected writing. If you’re looking for
+    something specific, the navigation links above are the fastest way in.
+  </p>
+</div>
+
+<footer>
+  Last updated: 2026-01-21
+</footer>
 
 </body>
 </html>
