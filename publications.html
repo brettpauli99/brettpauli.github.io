@@ -119,34 +119,34 @@
       color: #8a8a8a;
       font-size: 0.85rem;
     }
-    
-/* Presentation list with small thumbnails */
-.presentation {
-  display: grid;
-  grid-template-columns: 70px 1fr;
-  gap: 0.75rem;
-  align-items: start;
-}
-    
-.presentation img {
-  width: 55px;
-  height: 50px;
-  object-fit: cover;
-  border: 1px solid #e0e0e0;
-  border-radius: 1.5px;
-}
 
+    /* Presentations with bullets and right-side thumbnails */
+    li.pub.presentation-right {
+      display: grid;
+      grid-template-columns: 1fr 70px; /* text | image */
+      gap: 0.75rem;
+      align-items: start;
+    }
 
-@media (max-width: 600px) {
-  .presentation {
-    grid-template-columns: 1fr;
-  }
+    li.pub.presentation-right img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border: 1px solid #e0e0e0;
+      border-radius: 3px;
+      justify-self: end;
+    }
 
-  .presentation img {
-    width: 90px;
-  }
-}
-
+    @media (max-width: 600px) {
+      li.pub.presentation-right {
+        grid-template-columns: 1fr;
+      }
+      li.pub.presentation-right img {
+        width: 90px;
+        height: 90px;
+        justify-self: start;
+      }
+    }
   </style>
 </head>
 
@@ -184,8 +184,8 @@
 
 <ul>
   <li class="pub">
-    Gutgesell, M., McCann, K., O’Connor, R., Kc, K., Fraser, E. D. G., Moore, J. C., McMeans, B., Donohue, I., 
-    Bieg, C., Ward, C., <strong>Pauli, B.</strong>, Scott, A., Gillam, W., Gedalof, Z., Hanner, R. H., 
+    Gutgesell, M., McCann, K., O’Connor, R., Kc, K., Fraser, E. D. G., Moore, J. C., McMeans, B., Donohue, I.,
+    Bieg, C., Ward, C., <strong>Pauli, B.</strong>, Scott, A., Gillam, W., Gedalof, Z., Hanner, R. H.,
     Tunney, T., Rooney, N. (2024).
     The productivity–stability trade-off in global food systems.
     <em>Nature Ecology &amp; Evolution</em>, 8(11), 2135–2149.
@@ -193,7 +193,6 @@
     <span class="tag">10.1038/s41559-024-02529-y</span>
   </li>
 
-    
   <!-- TODO: Add additional peer-reviewed papers here -->
 </ul>
 
@@ -208,7 +207,6 @@
     <a href="https://hdl.handle.net/10214/29009" target="_blank">Archive</a>
   </li>
 
-
   <li class="pub">
     <strong>Pauli, B.</strong>, Guzzo, M., O'Connor, R., McCann, K. (2026).
     Functional trait composition changes in boreal freshwater fish communities across gradients of anthropogenic stressors
@@ -216,90 +214,66 @@
   </li>
 
   <li class="pub">
-    <strong>Pauli, B.</strong>, Vallès,H., O’Connor, R., Ward., C., McCann., K. (2025).
-    Linking envrionmental drivers of coral reef benthic states across scales.
-    <span class="muted">Manuscript in preparation.</span>
-  </li>
-
-    <li class="pub">
-   Bieg, C., McCann, K., <strong>Pauli, B.</strong>, O’Connor, R., Ward., C., Scott, A., Gutgesell, M. (2026).
-      Global Connectivity drives ecological imbalances.
+    <strong>Pauli, B.</strong>, Vallès, H., O’Connor, R., Ward, C., McCann, K. (2025).
+    Linking environmental drivers of coral reef benthic states across scales.
     <span class="muted">Manuscript in preparation.</span>
   </li>
 
   <li class="pub">
-    <strong>Pauli, B.</strong>. (2022).
-    Effect of pulp-mill effluents on White Sturgeon (Acipenser transmontanus) recruitment in Kamloops Lake and the Thompson Rvier watershed.
+    Bieg, C., McCann, K., <strong>Pauli, B.</strong>, O’Connor, R., Ward, C., Scott, A., Gutgesell, M. (2026).
+    Global connectivity drives ecological imbalances.
+    <span class="muted">Manuscript in preparation.</span>
+  </li>
+
+  <li class="pub">
+    <strong>Pauli, B.</strong> (2022).
+    Effect of pulp-mill effluents on White Sturgeon (<em>Acipenser transmontanus</em>) recruitment in Kamloops Lake and the Thompson River watershed.
     <span class="muted">Unpublished report.</span>
     <a href="BIOL4500-W22_FinalReport_Pauli_Brett.pdf" target="_blank">PDF</a>
   </li>
 
   <li class="pub">
-    <strong>Pauli, B.</strong>. (2020)
-    The effect of iron on primary productivity and pelagic ecology: A case study of atmospherically deposited Sahran dust.
+    <strong>Pauli, B.</strong> (2020).
+    The effect of iron on primary productivity and pelagic ecology: A case study of atmospherically deposited Saharan dust.
     <span class="muted">Unpublished report.</span>
     <a href="TermPaper_April3rd.pdf" target="_blank">PDF</a>
   </li>
-  
 </ul>
 
 <h2>Presentations</h2>
 <hr />
 
 <ul>
-  <li class="pub">
-    <strong>Pauli, B.</strong> (2024).
-    Drivers of coral reef benthic communities in the Caribbean.
-    American Fisheries Society, Hawai'i Convention Center, Honolulu, Hawai'i.
-    <!-- Optional: slides -->
-    <!-- <a href="assets/slides/presentation.pdf" target="_blank">Slides</a> -->
-  </li>
-  
-  <li class="pub">
-    <strong>Pauli, B.</strong> (2023).
-    Structural drivers of coral reef food webs in the Caribbean. 
-    Canadian Society of Ecology and Evolution, Winnipeg, Manitoba.
-    <!-- Optional: slides -->
-    <!-- <a href="assets/slides/presentation.pdf" target="_blank">Slides</a> -->
-  </li>
-
-    <li class="pub">
-    <strong>Pauli, B.</strong> (2022).
-    Algonquin Park Research, 
-    Harkness Laboratory of Fisheries Research, Algonquin Park, Ontario.
-  </li>
-
-
-
-  
-  <li class="pub presentation">
+  <li class="pub presentation-right">
+    <div>
+      <strong>Pauli, B.</strong> (2024).
+      Drivers of coral reef benthic communities in the Caribbean.
+      American Fisheries Society, Hawai'i Convention Center, Honolulu, Hawai'i.
+    </div>
     <img src="assets/AFS_Pic.jpg" alt="American Fisheries Society presentation">
-
-    <div>
-      <strong>Pauli, B.</strong> (<!-- TODO: Year -->).
-      <!-- TODO: Presentation title -->.
-      <em>American Fisheries Society Annual Meeting</em>.
-    </div>
   </li>
 
-  <li class="pub presentation">
-    <img src="assets/IMG_1014.JPG" alt="Conference presentation">
-
+  <li class="pub presentation-right">
     <div>
-      <strong>Pauli, B.</strong> (<!-- TODO: Year -->).
-      <!-- TODO: Presentation title -->.
-      <em><!-- TODO: Conference / venue --></em>.
+      <strong>Pauli, B.</strong> (2023).
+      Structural drivers of coral reef food webs in the Caribbean.
+      Canadian Society of Ecology and Evolution, Winnipeg, Manitoba.
     </div>
+    <img src="assets/IMG_1014.JPG" alt="Conference presentation">
+  </li>
+
+  <li class="pub">
+    <strong>Pauli, B.</strong> (2022).
+    Algonquin Park Research,
+    Harkness Laboratory of Fisheries Research, Algonquin Park, Ontario.
   </li>
 
   <!-- TODO: Add additional presentations here -->
 </ul>
 
-  
 <footer>
   Last updated: 2026-01-21
 </footer>
 
 </body>
 </html>
-
