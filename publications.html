@@ -147,6 +147,21 @@
         justify-self: start;
       }
     }
+
+    /* Ensure bullets show even when <li> is a grid */
+ul { list-style: disc; }
+li { display: list-item; }
+
+li.pub.presentation-right {
+  display: grid;               /* keep your layout */
+  grid-template-columns: 1fr 70px;
+  gap: 0.75rem;
+  align-items: start;
+
+  list-style-position: outside; /* keep bullet outside */
+}
+
+    
   </style>
 </head>
 
