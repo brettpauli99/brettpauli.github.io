@@ -1,11 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Resume | Brett Pauli</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      max-width: 860px;
+      margin: 3.5rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    header h1 {
+      letter-spacing: 0.12em;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    nav {
+      margin-top: 1.25rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.6rem;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #7a7a7a;
+    }
+
+    nav a.active {
+      color: #111;
+      font-weight: 600;
+    }
+
+    .icons {
+      margin-top: 1.25rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .iconlink {
+      display: inline-flex;
+      width: 34px;
+      height: 34px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      border: 1px solid #ddd;
+      text-decoration: none;
+    }
+
+    .iconlink:hover {
+      border-color: #bbb;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 2.5rem 0 0.75rem;
+      font-size: 1.25rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #e6e6e6;
+      margin: 1rem 0 1.75rem;
+    }
+
+    .download {
+      text-align: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .download a {
+      color: #0366d6;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .download a:hover {
+      text-decoration: underline;
+    }
+
+    iframe {
+      width: 100%;
+      height: 900px;
+      border: 1px solid #e6e6e6;
+      border-radius: 8px;
+    }
+
+    footer {
+      margin-top: 3.5rem;
+      text-align: center;
+      color: #8a8a8a;
+      font-size: 0.85rem;
+    }
+  </style>
 </head>
-  <header>
+
+<body>
+
+<header>
   <h1>Brett Pauli</h1>
 
   <nav>
@@ -31,11 +143,10 @@
   </div>
 </header>
 
-<body>
+<h2>Resume</h2>
+<hr />
 
-<h1>Resume</h1>
-
-<p>
+<p class="download">
   <a href="assets/Brett_Pauli_Resume_Jan_19_2026_Lengthy.pdf" target="_blank">
     Download CV (PDF)
   </a>
@@ -43,10 +154,13 @@
 
 <iframe
   src="assets/Brett_Pauli_Resume_Jan_19_2026_Lengthy.pdf"
-  width="80%"
-  height="900px"
-  style="border:none;">
+  title="Brett Pauli Resume PDF">
 </iframe>
+
+<footer>
+  Last updated: 2026-01-21
+</footer>
 
 </body>
 </html>
+
